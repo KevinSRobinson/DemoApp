@@ -1,0 +1,60 @@
+<Project DefaultTargets="DoPublish" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="$(teamcity_build_workingDir)\Trunk\BuildScripts\DemoClient\MSBuild.Community.Tasks.Targets"/>
+
+  <PropertyGroup>
+    <VersionFile>$(teamcity_build_workingDir)\Trunk\DemoClient\Properties\SharedAssemblyInfo.cs</VersionFile>
+    <ClickOnceBuildDirectory>$(teamcity_build_workingDir)\Trunk\DemoClient\bin\$(Configuration)\app.publish</ClickOnceBuildDirectory>
+    <ClickOnceInstallDirectory>$(teamcity_build_workingDir)\Publish\DemoClient</ClickOnceInstallDirectory>
+    <ClickOnceHtmFileLocation>$(teamcity_build_workingDir)\Trunk\BuildScripts\DemoClient\publish.htm</ClickOnceHtmFileLocation>
+    <ClickOnceBuildEngineSourceDirectory>$(teamcity_build_workingDir)\Trunk\BuildScripts\DemoClient\Engine</ClickOnceBuildEngineSourceDirectory>
+    <ClickOnceBuildEngineDestinationDirectory>$(teamcity_build_workingDir)\Trunk\DemoClient\Engine</ClickOnceBuildEngineDestinationDirectory>
+    <ClickOnceFinalLocation>$(env_PublishUrl)</ClickOnceFinalLocation>
+  </PropertyGroup>
+
+  <Target Name="DoPublish">
+    
+    <!-- Copy the required ClickOnce build engine files -->
+    <CreateItem Include="$(ClickOnceBuildEngineSourceDirectory)\**\*.*">
+      <Output TaskParameter="Include" ItemName="ClickOnceBuildEngine" />
+    </CreateItem>
+
+    <Copy SourceFiles="@(ClickOnceBuildEngine)"
+        DestinationFiles="@(ClickOnceBuildEngine->'$(ClickOnceBuildEngineDestinationDirectory)\%(RecursiveDir)%(Filename)%(Extension)')" />
+
+    <!-- Read & parse the version info from SharedAssemblyInfo.cs -->
+     <ReadLinesFromFile File="$(VersionFile)">
+      <Output TaskParameter="Lines"
+              ItemName="ItemsFromFile"/>
+    </ReadLinesFromFile>
+
+    <PropertyGroup>
+      <Pattern>\[assembly: AssemblyVersion\(.(\d+)\.(\d+)\.(\d+).(\d+)</Pattern>
+      <In>@(ItemsFromFile)</In>
+      <Out>$([System.Text.RegularExpressions.Regex]::Match($(In), $(Pattern)))</Out>
+      <Version>$(Out.Remove(0, 28))</Version>
+    </PropertyGroup>
+
+    <!-- Cleanup old files -->
+    <RemoveDir Directories="$(ClickOnceInstallDirectory)" ContinueOnError="true" />
+
+    <!-- Build the solution -->
+    <MSBuild Projects="$(teamcity_build_workingDir)\Trunk\Demo.sln" Targets="Clean;Build" Properties="ApplicationVersion=$(Version);Configuration=$(Configuration)"/>
+
+    <!-- Run the ClickOnce Publish  -->
+    <MSBuild Projects="$(teamcity_build_workingDir)\Trunk\DemoClient\DemoClient.csproj" Targets="Publish" Properties="ApplicationVersion=$(Version);Configuration=$(Configuration);InstallUrl=$(ClickOnceFinalLocation);PublishUrl=$(ClickOnceFinalLocation)" />
+
+    <!-- Make the final install directory - copy the published files + install HTML page there -->    
+    <MakeDir Directories="$(ClickOnceInstallDirectory)"/>
+    <Copy SourceFiles="$(ClickOnceHtmFileLocation)" DestinationFiles="$(ClickOnceInstallDirectory)\publish.htm"/>
+    <Exec Command="xcopy /C /E &quot;$(ClickOnceBuildDirectory)&quot; &quot;$(ClickOnceInstallDirectory)&quot;" />
+
+    <!-- Finally, update the version information in the HTML install page -->
+    <FileUpdate Files="$(ClickOnceInstallDirectory)\publish.htm"
+                IgnoreCase="true"
+                Multiline="true"
+                Singleline="false"
+                Regex="{VERSION}"
+                ReplacementText="$(Version)" />
+  </Target>
+</Project>

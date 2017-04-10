@@ -52,13 +52,13 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>48619DAE6620B4E87490142008A6B9E61779D0DE</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>0E3DD6F2A16709417429394F45A8821F32B2FFC7</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>DemoApp_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>DemoApp_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>DemoApp.snk</AssemblyOriginatorKeyFile>
@@ -92,6 +92,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="SetVersion.csproj" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,7 +105,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Content Include="ClickOnce.csproj" />
     <None Include="DemoApp.snk" />
+    <None Include="DemoApp_1_TemporaryKey.pfx" />
     <None Include="DemoApp_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -1,0 +1,23 @@
+﻿<Project DefaultTargets="SetVersion" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup>
+<Version>$(BUILD_NUMBER)</Version>
+</PropertyGroup>
+<Import Project="$(MSBuildExtensionsPath)\ExtensionPack\4.0\MSBuild.ExtensionPack.tasks"/>
+<Target Name="SetVersion">
+<ItemGroup>
+<AssemblyInfoFilesFirst Include="$(MSBuildProjectDirectory)\DemoApp\Properties\AssemblyInfo.cs"/>
+</ItemGroup>
+<AssemblyInfo AssemblyInfoFiles="@(AssemblyInfoFilesFirst)"
+AssemblyVersion="$(Version)"
+AssemblyFileVersion="$(Version)"
+AssemblyConfiguration="$(Configuration)"
+AssemblyCopyright="© 2011 YOUR COMPANY. All rights reserved."
+AssemblyProduct="First Project Name - $(Configuration)"/>
+<AssemblyInfo AssemblyInfoFiles="@(AssemblyInfoFilesSecond)"
+AssemblyVersion="$(Version)"
+AssemblyFileVersion="$(Version)"
+AssemblyConfiguration="$(Configuration)"
+AssemblyCopyright="© 2011 YOUR COMPANY. All rights reserved."
+AssemblyProduct="Second Project - $(Configuration)"/>
+</Target>
+</Project>
