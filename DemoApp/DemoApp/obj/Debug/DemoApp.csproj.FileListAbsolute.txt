@@ -37,3 +37,7 @@ C:\Repos\Demos\DemoApp\DemoApp\obj\Debug\DemoApp.Properties.Resources.resources
 C:\Repos\Demos\DemoApp\DemoApp\obj\Debug\DemoApp.csproj.GenerateResource.Cache
 C:\Repos\Demos\DemoApp\DemoApp\obj\Debug\DemoApp.exe
 C:\Repos\Demos\DemoApp\DemoApp\obj\Debug\DemoApp.pdb
+C:\Repos\Demos\DemoApp\DemoApp\bin\Debug\DemoApp.exe.manifest
+C:\Repos\Demos\DemoApp\DemoApp\bin\Debug\DemoApp.application
+C:\Repos\Demos\DemoApp\DemoApp\obj\Debug\DemoApp.exe.manifest
+C:\Repos\Demos\DemoApp\DemoApp\obj\Debug\DemoApp.application
