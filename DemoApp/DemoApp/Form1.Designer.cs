@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -39,11 +40,20 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "labelControl1";
             // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(216, 106);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(63, 13);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "labelControl2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(368, 241);
+            this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -55,6 +65,7 @@
         #endregion
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
     }
 }
 
