@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WkcK31EgYqx8muc1EAr6q/OScPn31k5QGbFgMFQ4+S0=</dsig:DigestValue>
+        <dsig:DigestValue>rSeCEAJ14APHSlii6aNfXqLGvej/3giwDsm+6iVy1O8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -371,31 +371,22 @@
       <dsig:DigestValue>v8hLycVjL1PPd67js74XKpkZM29fijEWwVujzNpOHco=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DeployC1Settings.xml" size="1032" writeableType="applicationData">
+  <file name="DeployC1Settings.xml" size="1035" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2bhZASkfNBcclT2FX5ejK9+dIHvuKiwnPTRAH5tr9iQ=</dsig:DigestValue>
+      <dsig:DigestValue>MVQxLQHrqIcEg2Q1vF9IaOfJITD9wM5D2jbbqhMN0y0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DeploySettings.xml" size="279" writeableType="applicationData">
+  <file name="DeploySettings.xml" size="277" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>AiI1spdS32jzXqDidtzJCbtuJ/5CZYPK4Tb5GBcHmcw=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="DeploySpec.xml" size="994" writeableType="applicationData">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>En4a1Xwe8gYqzNi2jtlmJXg2XIZWC9cgix+RwCMp5D8=</dsig:DigestValue>
+      <dsig:DigestValue>Y7gb6TjCnnl7SOfOHk7Xtdc0ClfqygI/IeLtuVn3eZY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SetVersion.csproj" size="1017">

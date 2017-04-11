@@ -99,7 +99,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="DeployC1Settings.xml" />
     <Content Include="DeploySettings.xml" />
-    <Content Include="DeploySpec.xml" />
     <Content Include="SetVersion.csproj" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -118,7 +117,6 @@
     <None Include="DemoApp.snk" />
     <None Include="DemoApp_1_TemporaryKey.pfx" />
     <None Include="DemoApp_TemporaryKey.pfx" />
-    <None Include="Overrides.RenameMe.ps1" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -146,19 +144,4 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\OctoPack.3.0.43\tools\OctoPack.targets" Condition="Exists('..\packages\OctoPack.3.0.43\tools\OctoPack.targets')" />
-  <Target Name="EnsureOctoPackImported" BeforeTargets="BeforeBuild" Condition="'$(OctoPackImported)' == ''">
-    <Error Condition="!Exists('..\packages\OctoPack.3.0.43\tools\OctoPack.targets') And ('$(RunOctoPack)' != '' And $(RunOctoPack))" Text="You are trying to build with OctoPack, but the NuGet targets file that OctoPack depends on is not available on this computer. This is probably because the OctoPack package has not been committed to source control, or NuGet Package Restore is not enabled. Please enable NuGet Package Restore to download them. For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
-    <Error Condition="Exists('..\packages\OctoPack.3.0.43\tools\OctoPack.targets') And ('$(RunOctoPack)' != '' And $(RunOctoPack))" Text="OctoPack cannot be run because NuGet packages were restored prior to the build running, and the targets file was unavailable when the build started. Please build the project again to include these packages in the build. You may also need to make sure that your build server does not delete packages prior to each build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
-  </Target>
-  <Import Project="..\packages\OctoPackPlus.Core.0.1.13\tools\OctoPackPlus.Core.targets" Condition="Exists('..\packages\OctoPackPlus.Core.0.1.13\tools\OctoPackPlus.Core.targets')" />
-  <Target Name="EnsureOctoPackPlusCoreImported" BeforeTargets="BeforeBuild" Condition="'$(OctoPackPlus_Core_Imported)' == ''">
-    <Error Condition="!Exists('..\packages\OctoPackPlus.Core.0.1.13\tools\OctoPackPlus.Core.targets')" Text="You are trying to build with OctoPackPlus.Core, but the NuGet targets file that it depends on is not available on this computer. This is probably because the OctoPackPlus.Core package has not been committed to source control, or NuGet Package Restore is not enabled. Please enable NuGet Package Restore to download them. For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
-    <Error Condition="Exists('..\packages\OctoPackPlus.Core.0.1.13\tools\OctoPackPlus.Core.targets')" Text="OctoPackPlus.Core cannot be run because NuGet packages were restored prior to the build running, and the targets file was unavailable when the build started. Please build the project again to include these packages in the build. You may also need to make sure that your build server does not delete packages prior to each build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
-  </Target>
-  <Import Project="..\packages\OctoPackPlus.ClickOnce.0.1.14\tools\OctoPackPlus.ClickOnce.targets" Condition="Exists('..\packages\OctoPackPlus.ClickOnce.0.1.14\tools\OctoPackPlus.ClickOnce.targets')" />
-  <Target Name="EnsureOctoPackPlusClickOnceImported" BeforeTargets="BeforeBuild" Condition="'$(OctoPackPlus_ClickOnce_Imported)' == ''">
-    <Error Condition="!Exists('..\packages\OctoPackPlus.ClickOnce.0.1.14\tools\OctoPackPlus.ClickOnce.targets') And ('$(RunOctoPack)' != '' And $(RunOctoPack))" Text="You are trying to build with OctoPack, but the NuGet targets file that OctoPack depends on is not available on this computer. This is probably because the OctoPack package has not been committed to source control, or NuGet Package Restore is not enabled. Please enable NuGet Package Restore to download them. For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
-    <Error Condition="Exists('..\packages\OctoPackPlus.ClickOnce.0.1.14\tools\OctoPackPlus.ClickOnce.targets') And ('$(RunOctoPack)' != '' And $(RunOctoPack))" Text="OctoPack cannot be run because NuGet packages were restored prior to the build running, and the targets file was unavailable when the build started. Please build the project again to include these packages in the build. You may also need to make sure that your build server does not delete packages prior to each build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
-  </Target>
 </Project>
