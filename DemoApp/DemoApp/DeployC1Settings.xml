@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Settings ProjectPath="..\DemoApp\DemoApp.csproj">
+<Settings ProjectPath="..\DemoApp\DemoApp\DemoApp.csproj">
   <Environments>
     <Environment>Development</Environment>
     <Environment>TEST</Environment>
