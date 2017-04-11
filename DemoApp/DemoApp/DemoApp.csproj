@@ -117,7 +117,6 @@
     <None Include="DemoApp.snk" />
     <None Include="DemoApp_1_TemporaryKey.pfx" />
     <None Include="DemoApp_TemporaryKey.pfx" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
