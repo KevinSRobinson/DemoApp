@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Settings ProjectPath="..\myClient\myClient.csproj">
+<Settings ProjectPath="..\DemoApp\DemoApp.csproj">
   <Environments>
-    <Environment>DEV</Environment>
+    <Environment>Development</Environment>
     <Environment>TEST</Environment>
-    <Environment>PROD</Environment>
+    <Environment>Production</Environment>
   </Environments>
   <Build>
-    <AssemblyName  DEV="myClient Dev"
-                  TEST="myClient Test"
-                  PROD="myClient"
+    <AssemblyName  DEV="DemoApp Dev"
+                  TEST="DemoApp Test"
+                  PROD="DemoApp"
                   />
     <ConfigFile destination="app.config" mode="Replace"
                  DEV="app.01.DEV.config"
@@ -17,13 +17,13 @@
                 />
   </Build>
   <ClickOnce>
-    <PublishLocation  DEV="\\Shared\Folder\Path\To\ClickOnce\Files DEV\"
-                     TEST="\\Shared\Folder\Path\To\ClickOnce\Files TEST\"
-                     PROD="\\Shared\Folder\Path\To\ClickOnce\Files PROD\"
+    <PublishLocation  DEV="\\FPM-KNSR-12BS1\QloadClickOnceBuilds\Dev"
+                     TEST="\\FPM-KNSR-12BS1\QloadClickOnceBuilds\Test"
+                     PROD="\\FPM-KNSR-12BS1\QloadClickOnceBuilds\Production"
                      />
-    <ProductName  DEV="myClient Dev"
-                 TEST="myClient Test"
-                 PROD="myClient"
+    <ProductName  DEV="DemoApp Dev"
+                 TEST="DemoApp Test"
+                 PROD="DemoApp"
                  />
   </ClickOnce>
 </Settings>
