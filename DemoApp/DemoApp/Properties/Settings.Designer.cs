@@ -25,7 +25,8 @@ namespace DemoApp.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Not Set 1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=FPM-KNSR-12SQLD\\Development;Initial Catalog=QTEC_STG;Integrated Secur" +
+            "ity=True")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));

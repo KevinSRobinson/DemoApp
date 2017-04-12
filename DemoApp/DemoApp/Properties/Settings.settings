@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ConnectionString" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Not Set 1</Value>
+      <Value Profile="(Default)">Data Source=FPM-KNSR-12SQLD\Development;Initial Catalog=QTEC_STG;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

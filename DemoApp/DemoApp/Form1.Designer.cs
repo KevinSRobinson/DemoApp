@@ -32,6 +32,8 @@
             this.lcVersion = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.lcConnctionString = new System.Windows.Forms.Label();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -65,11 +67,30 @@
             this.labelControl3.TabIndex = 3;
             this.labelControl3.Text = "Enviornment";
             // 
+            // lcConnctionString
+            // 
+            this.lcConnctionString.AutoSize = true;
+            this.lcConnctionString.Location = new System.Drawing.Point(26, 110);
+            this.lcConnctionString.Name = "lcConnctionString";
+            this.lcConnctionString.Size = new System.Drawing.Size(35, 13);
+            this.lcConnctionString.TabIndex = 4;
+            this.lcConnctionString.Text = "label1";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Location = new System.Drawing.Point(26, 94);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(85, 13);
+            this.labelControl4.TabIndex = 5;
+            this.labelControl4.Text = "Connection String";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 231);
+            this.Controls.Add(this.labelControl4);
+            this.Controls.Add(this.lcConnctionString);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.lcVersion);
@@ -87,6 +108,8 @@
         private DevExpress.XtraEditors.LabelControl lcVersion;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private System.Windows.Forms.Label lcConnctionString;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
     }
 }
 

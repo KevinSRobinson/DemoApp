@@ -18,6 +18,8 @@ namespace DemoApp
             InitializeComponent();
 
             this.labelControl1.Text = ConfigurationManager.AppSettings["Environment"];
+            this.lcConnctionString.Text = Properties.Settings.Default.ConnectionString;
+            
             lcVersion.Text = "Version " + Application.ProductVersion;
         }
 
