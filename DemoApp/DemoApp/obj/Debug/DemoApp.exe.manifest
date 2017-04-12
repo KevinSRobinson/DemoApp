@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DemoApp.exe" size="8648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DemoApp.exe" size="9160">
       <assemblyIdentity name="DemoApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eAAevviQyh+LfzsxfQTIKLWsDKRc1iq+LHs6NTooXsk=</dsig:DigestValue>
+        <dsig:DigestValue>2W0JhKKWsgNxaQ9uFxjcpTMhcV9qvkQkF7msMeBJKQA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -362,13 +362,13 @@
       <dsig:DigestValue>A9OeQvrF80WiwC4CQ6V/duEaKV/Kndsg7MxIGD4QTqk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DemoApp.exe.config" size="940">
+  <file name="DemoApp.exe.config" size="916">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>v8hLycVjL1PPd67js74XKpkZM29fijEWwVujzNpOHco=</dsig:DigestValue>
+      <dsig:DigestValue>mXS4e+Z7ry7wjT58ckcRR7Un2ZROgkVhJUFxeIQjQ+w=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DeployC1Settings.xml" size="1035" writeableType="applicationData">

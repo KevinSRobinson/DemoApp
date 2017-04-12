@@ -18,5 +18,10 @@ namespace DemoApp
 
             this.labelControl1.Text = Properties.Settings.Default.ConnectionString;
         }
+
+        private void labelControl2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

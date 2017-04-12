@@ -40,3 +40,4 @@ C:\Repos\Demos\DemoApp\DemoApp\obj\Release\DemoApp.exe.manifest
 C:\Repos\Demos\DemoApp\DemoApp\obj\Release\DemoApp.application
 C:\Repos\Demos\DemoApp\DemoApp\obj\Release\DemoApp.exe
 C:\Repos\Demos\DemoApp\DemoApp\obj\Release\DemoApp.pdb
+C:\Repos\Demos\DemoApp\DemoApp\bin\Release\DemoApp.exe.config

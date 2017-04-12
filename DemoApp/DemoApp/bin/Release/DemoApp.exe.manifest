@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E1jo3BX9YifgVEWJXo8IyTU81gyAboyZnkKlGKjqPg0=</dsig:DigestValue>
+        <dsig:DigestValue>4HAjXStU1ZsYym+YoT5mDWfFtplGInJT/dIUASqd454=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -360,6 +360,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>A9OeQvrF80WiwC4CQ6V/duEaKV/Kndsg7MxIGD4QTqk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DemoApp.exe.config" size="956">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ITNel5BHrQr1jzaW6sxg1ogITWH7qzIMJcrv7JD8+KM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DeployC1Settings.xml" size="1035" writeableType="applicationData">

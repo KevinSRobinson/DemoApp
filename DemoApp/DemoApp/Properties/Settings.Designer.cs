@@ -25,7 +25,7 @@ namespace DemoApp.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("DevConnectionString From App Config")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Not Set 1")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));

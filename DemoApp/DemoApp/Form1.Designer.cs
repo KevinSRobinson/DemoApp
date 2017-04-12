@@ -34,7 +34,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(100, 27);
+            this.labelControl1.Location = new System.Drawing.Point(95, 121);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(63, 13);
             this.labelControl1.TabIndex = 0;
@@ -42,11 +42,12 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(216, 106);
+            this.labelControl2.Location = new System.Drawing.Point(84, 12);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(63, 13);
+            this.labelControl2.Size = new System.Drawing.Size(74, 13);
             this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "labelControl2";
+            this.labelControl2.Text = "Feature Branch";
+            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // Form1
             // 
