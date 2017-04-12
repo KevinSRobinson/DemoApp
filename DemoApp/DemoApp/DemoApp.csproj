@@ -113,7 +113,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Content Include="ClickOnce.csproj" />
-    <None Include="Publish.config" />
+    <None Include="App.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
     <None Include="AppSettingReplace.ps1" />
     <None Include="Customized.Targets" />
     <None Include="DemoApp.snk" />
@@ -148,4 +153,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v12.0\Web\Microsoft.Web.Publishing.Tasks.dll" />
+  <Target Name="AfterBuild">
+    <TransformXml Source="App.config"
+                  Transform="App.$(Configuration).config"
+                  Destination="$(OutputPath)\$(AssemblyName).$(OutputType).config" />
+  </Target>
 </Project>
+
