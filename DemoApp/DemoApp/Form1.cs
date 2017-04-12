@@ -15,6 +15,8 @@ namespace DemoApp
         public Form1()
         {
             InitializeComponent();
+
+            this.labelControl1.Text = Properties.Settings.Default.ConnectionString;
         }
     }
 }
