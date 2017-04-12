@@ -18,6 +18,7 @@ AssemblyVersion="$(Version)"
 AssemblyFileVersion="$(Version)"
 AssemblyConfiguration="$(Configuration)"
 AssemblyCopyright="© 2011 YOUR COMPANY. All rights reserved."
+              
 AssemblyProduct="Second Project - $(Configuration)"/>
 </Target>
 </Project>

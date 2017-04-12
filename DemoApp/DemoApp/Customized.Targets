@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<!--<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   
 </Project>
 
@@ -19,7 +19,7 @@
   </When>
 </Choose>
 	<PropertyGroup>
-  <!-- Note this must be done AFTER the above Choose (so PublishDir is set)-->
+  --><!-- Note this must be done AFTER the above Choose (so PublishDir is set)--><!--
   <PublishFilePath>$(PublishDir)publish.html</PublishFilePath
 </PropertyGroup>
 
@@ -49,7 +49,7 @@
   <Time Format="dd/MM/yyyy HH:mm">
     <Output TaskParameter="FormattedTime" PropertyName="PublishTime" />
   </Time>
-  <!-- Finalise the publish.htm template file and copy it to the publish location -->
+  --><!-- Finalise the publish.htm template file and copy it to the publish location --><!--
   <TemplateFile Template="Publish\publish.template.html" Tokens="@(Tokens)" OutputFilename="$(PublishFilePath)" />
   <FileUpdate Files="$(PublishFilePath)" Regex="\${PublishTime}" ReplacementText="$(PublishTime)" />
-</Target>
+</Target>-->

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DemoApp.exe" size="8648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DemoApp.exe" size="9160">
       <assemblyIdentity name="DemoApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EILpL+wgNXp0kO0Da1bqZcUJoNNqfQZPhPc0hG8poLA=</dsig:DigestValue>
+        <dsig:DigestValue>hFjOaps3RcV5dmDDQBeur4kHRRbkWfYhut95jYWvULc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -362,13 +362,13 @@
       <dsig:DigestValue>A9OeQvrF80WiwC4CQ6V/duEaKV/Kndsg7MxIGD4QTqk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DemoApp.exe.config" size="918">
+  <file name="DemoApp.exe.config" size="157">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>wAngbq3cHLYpYnGrtd8GYa2OBOq3nSF4Xk+ZI4uHaBA=</dsig:DigestValue>
+      <dsig:DigestValue>Kk3Q0R7jFVoZvVNVSILr4APrMh/FDw6rpQKYaOLhUtc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DeployC1Settings.xml" size="1035" writeableType="applicationData">
@@ -389,13 +389,13 @@
       <dsig:DigestValue>Y7gb6TjCnnl7SOfOHk7Xtdc0ClfqygI/IeLtuVn3eZY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SetVersion.csproj" size="1017">
+  <file name="SetVersion.csproj" size="1033">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>h/iPq/CcEaOTdkMqJ/f1ZkO931xya102pEjc/yoGMeU=</dsig:DigestValue>
+      <dsig:DigestValue>3I/xjWtk1a+V/Q/5ykkImsi/Uj9lialfZLuGnHlPgUw=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

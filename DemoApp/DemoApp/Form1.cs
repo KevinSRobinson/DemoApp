@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace DemoApp
         {
             InitializeComponent();
 
-            this.labelControl1.Text = Properties.Settings.Default.ConnectionString;
+            this.labelControl1.Text = ConfigurationManager.AppSettings["Environment"];
         }
 
         private void labelControl2_Click(object sender, EventArgs e)
