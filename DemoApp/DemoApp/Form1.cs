@@ -18,6 +18,7 @@ namespace DemoApp
             InitializeComponent();
 
             this.labelControl1.Text = ConfigurationManager.AppSettings["Environment"];
+            lcVersion.Text = "Version " + Application.ProductVersion;
         }
 
         private void labelControl2_Click(object sender, EventArgs e)

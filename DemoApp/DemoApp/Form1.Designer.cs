@@ -29,32 +29,50 @@
         private void InitializeComponent()
         {
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.lcVersion = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.SuspendLayout();
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(95, 121);
+            this.labelControl1.Location = new System.Drawing.Point(123, 56);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(63, 13);
+            this.labelControl1.Size = new System.Drawing.Size(0, 13);
             this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "labelControl1";
+            // 
+            // lcVersion
+            // 
+            this.lcVersion.Location = new System.Drawing.Point(123, 12);
+            this.lcVersion.Name = "lcVersion";
+            this.lcVersion.Size = new System.Drawing.Size(0, 13);
+            this.lcVersion.TabIndex = 1;
+            this.lcVersion.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(84, 12);
+            this.labelControl2.Location = new System.Drawing.Point(26, 12);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(74, 13);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Feature Branch";
-            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
+            this.labelControl2.Size = new System.Drawing.Size(35, 13);
+            this.labelControl2.TabIndex = 2;
+            this.labelControl2.Text = "Version";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(26, 56);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(60, 13);
+            this.labelControl3.TabIndex = 3;
+            this.labelControl3.Text = "Enviornment";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 231);
+            this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.lcVersion);
             this.Controls.Add(this.labelControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -66,7 +84,9 @@
         #endregion
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lcVersion;
         private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }
 
