@@ -113,6 +113,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Content Include="ClickOnce.csproj" />
+    <None Include="AppSettingReplace.ps1" />
     <None Include="Customized.Targets" />
     <None Include="DemoApp.snk" />
     <None Include="DemoApp_1_TemporaryKey.pfx" />
