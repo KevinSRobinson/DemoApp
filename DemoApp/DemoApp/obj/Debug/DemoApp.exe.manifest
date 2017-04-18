@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+j3dxF1lHC7WaYXrgLMlStcuhTWMPIhvmYp+HlMjBB0=</dsig:DigestValue>
+        <dsig:DigestValue>uwrVySJ6oe6/JXm8gHxXCyrXL/+lox4JG/dBRlcw7QM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -368,7 +368,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>mxjREnNMlIYA3S3WpE1zpqCNGkhQB7krYY3GiVDVH0o=</dsig:DigestValue>
+      <dsig:DigestValue>2SinmHOjmPvbyVggCjKxPok/fcmyXfs85z+aCATDj4c=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DeployC1Settings.xml" size="1035" writeableType="applicationData">
