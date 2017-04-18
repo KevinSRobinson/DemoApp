@@ -15,7 +15,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>\\FPM-KNSR-12BS1\DemoClickOnceBuilds\</PublishUrl>
+    <PublishUrl>\\FPM-KNSR-12BS1\DemoClickOnceBuilds\Production\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
